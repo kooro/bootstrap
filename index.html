@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap实例练习</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="lib/css.css">
+    <link rel="stylesheet" type="text/css" href="lib/animate.css">
+    <link rel="stylesheet" type="text/css" href="lib/responsiveslides.css">
+    <script type="text/javascript" src='lib/jquery.js'></script>
+    <script type="text/javascript" src='bootstrap/js/bootstrap.js'></script>
+    <script type="text/javascript" src='lib/responsiveslides.js'></script>
+</head>
+
+<body>
+    <div class="head container-fluid row">
+        <div class="container">
+            <nav class="navbar row">
+                <div class="navbar-header col-sm-3 col-xs-8">
+                    <a class="navbar-brand logo" href="#">
+                        <img alt="Brand" class="img-responsive" src="images/logo.png">
+                    </a>
+                </div>
+                <nav class="navbar col-sm-9">
+                    <div class="container-fluid">
+                        <!-- 小型屏幕时显示 （汉堡菜单） -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed head-collapse-btn" data-toggle="collapse" data-target="#head-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- 导航内容，自适应 -->
+                        <div class="collapse navbar-collapse row" id="head-nav">
+                            <ul class="nav navbar-nav col-xs-12 row">
+                                <li class="active col-sm-2"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="col-sm-2"><a href="#">About </a></li>
+                                <li class="dropdown col-sm-2">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Truck</a></li>
+                                        <li><a href="#">Truck</a></li>
+                                        <li><a href="#">Truck</a></li>
+                                        <li><a href="#">Truck</a></li>
+                                        <li><a href="#">Truck</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-2"><a href="#">Blog </a></li>
+                                <li class="col-sm-2"><a href="#">Service </a></li>
+                                <li class="col-sm-2"><a href="#">Mail Us </a></li>
+                            </ul>
+                        </div>
+                        <!-- 导航内容，自适应 end-->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </nav>
+        </div>
+        <!-- 轮播区域 -->
+        <div id="top" class="callbacks_container col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+            <ul class="rslides" id="slider">
+                <li>
+                    <div class="banner-info">
+                        <h2>Where you always find great truck journey</h2>
+                        <p>Ut sodales erat tortor, eget rhoncus nulla rutrum sit amet. Aliquam sit amet lorem dui. Nulla sagittis dolor id mi tincidunt varius. Donec quis suscipit tortor vel pellentesque libero</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-info">
+                        <h2>Make your journey truck in United Kingdom</h2>
+                        <p>Eget rhoncus nulla rutrum sit amet. Ut sodales erat tortor Aliquam sit amet lorem dui. Donec quis suscipit tortor vel pellentesque libero Nulla sagittis dolor id mi tincidunt varius</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-info">
+                        <h2>Provider Volvo Trucks truck in Ukraine</h2>
+                        <p>Eget rhoncus nulla rutrum sit amet. Ut sodales erat tortor Aliquam sit amet lorem dui. Donec quis suscipit tortor vel pellentesque libero Nulla sagittis dolor id mi tincidunt varius</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slide_control"></div>
+        <script type="text/javascript">
+        $(function() {
+            $("#slider").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                pause: true,
+                pauseControls: true,
+                namespace: 'slide'
+            });
+        });
+        </script>
+        <!-- 轮播区域结束 -->
+    </div>
+    <!-- 内容区域（1） -->
+    <div class="content1 container">
+        <div class="row">
+            <div class="content1_left col-md-7 wow slideInLeft" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                <h2>Nullam consectetur tristique fermentum vstibulum</h2>
+                <p class="fade-color">Cras porttitor imperdiet volutpat. Nulla malesuada lectus eros ut convallis felis consectetur ut</p>
+                <p>Proin eget ipsum ultrices, aliquet velit eget, tempus tortor. Phasellus non velit sit amet diam faucibus molestie. Mauris sapien eros, mattis et elit non, tincidunt efficitur nisi augue dui iaculis nulla, a pretium nisl turpis vel augue auctor viverra aliquam .</p>
+                <a class="see_more">
+                    <span></span>
+                    <p>SEE MORE</p>
+                </a>
+            </div>
+            <div class="content1_right col-md-5 wow slideInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                <img src="images/2.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 内容区域（1）end -->
+    <!-- 内容区域（2） -->
+    <div class="container-fluid content2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 content2_left wow fadeInLeft" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h1>Our Service</h1>
+                    <p class="fade-color">Cras porttitor imperdiet volutpat nulla malesuada lectus eros ut convallis felis consectetur ut</p>
+                    <br>
+                    <p>nteger vitae ligula sed lectus consectetur pellentesque blandit nec orci. Nulla ultricies nunc et lorem semper, quis accumsan dui aliquam aucibus sagittis placerat.</p>
+                    <br>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non nibh nec enim sollicitudin interdum.tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                    <a class="see_more">
+                        <span></span>
+                        <p>SEE MORE</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-12 row content2_right">
+                    <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                        <figure>
+                            <span></span>
+                            <img src="images/1.png">
+                        </figure>
+                        <h3>Proin eget ipsum ultrices</h3>
+                        <p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                        <figure>
+                            <span></span>
+                            <img src="images/2.png">
+                        </figure>
+                        <h3>Proin eget ipsum ultrices</h3>
+                        <p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                        <figure>
+                            <span></span>
+                            <img src="images/3.png">
+                        </figure>
+                        <h3>Proin eget ipsum ultrices</h3>
+                        <p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                        <figure>
+                            <span></span>
+                            <img src="images/4.png">
+                        </figure>
+                        <h3>Proin eget ipsum ultrices</h3>
+                        <p>Sed ut perspiciis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容区域（2）end -->
+    <!-- 内容区域（3）-->
+    <div class="container-fluid content3">
+        <div class="container">
+            <div class="wow fadeInLeft" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                <h2>Testimonials</h2>
+                <h4>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <br>
+                ut convallis felis consectetur ut</h6>
+            </div>
+            <p class="wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum iaculis diam quis sodales. Vestibulum eu dui tellus. In viverra porttitor auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas "</p>
+        </div>
+    </div>
+    <!-- 内容区域（3）end -->
+    <!-- 内容区域（4）-->
+    <div class="container-fluid content4">
+        <div class="container">
+            <h1>News</h1>
+            <h5 class="fade-color">Cras porttitor imperdiet volutpat nulla malesuada lectus eros
+                <span class="fade-color">ut convallis felis consectetur ut</span>
+            </h5>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-6 wow fadeInLeft"  data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h4>Integer vitae ligula sed lectus</h4>
+                    <span class="news_time">8.00 - 10.00 | JUN 09,2014</span>
+                    <figure>
+                        <img class="img-responsive" src="images/img1.jpg">
+                    </figure>
+                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 wow fadeInLeft" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h4>Integer vitae ligula sed lectus</h4>
+                    <span class="news_time">8.00 - 10.00 | JUN 09,2014</span>
+                    <figure>
+                        <img class="img-responsive" src="images/img2.jpg">
+                    </figure>
+                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h4>Integer vitae ligula sed lectus</h4>
+                    <span class="news_time">8.00 - 10.00 | JUN 09,2014</span>
+                    <figure>
+                        <img class="img-responsive" src="images/img3.jpg">
+                    </figure>
+                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-6 wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h4>Integer vitae ligula sed lectus</h4>
+                    <span class="news_time">8.00 - 10.00 | JUN 09,2014</span>
+                    <figure>
+                        <img class="img-responsive" src="images/img4.jpg">
+                    </figure>
+                    <p>Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容区域（4）end -->
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <ul class="footer_nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Mail Us</a></li>
+                    </ul>
+                    <br>
+                    <input type="email" class="email" placeholder="Email">
+                    <button class="btn btn-default">Subscribe</button>
+                </div>
+                <div class="col-md-3 col-xs-12 footer_address wow bounceIn" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                    <h2>Address</h1>
+                <p class="adr">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                      756 gt globel Place,CD-Road,M  &nbsp&nbsp&nbsp 07  435.
+                </p>
+                <p class="tel">
+                <span class="glyphicon glyphicon-user"></span>
+                    +1(100)2345-6789
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12 footer_about wow fadeInRight" data-wow-dalay='0.5s' data-wow-duration='1s'>
+                <a href=""><img class="img-responsive" src="images/logo.png"></a>
+                <p>Proin eget ipsum ultrices, aliquet velit eget,<br> tempus tortor. Phasellus non velit sit amet <br> diam faucibus molestie tincidunt.</p>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript" src='lib/wow.js'></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</body>
+
+</html>
